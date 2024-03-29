@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css" type="text/css"/>
+    <link rel="stylesheet" href="digital_clock.css" type="text/css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="digital-clock">
+            <div id="time">
+                <div class="circle" style="--clr:#ff2972;">
+                    <!-- <div class="dots hr-dots"></div> -->
+                    <svg>
+                        <circle cx ="70" cy="70" r="70"></circle>
+                        <circle cx ="70" cy="70" r="70" id="hh"></circle>
+                    </svg>
+                    <div id="hours">00</div>
+                </div>
+                <div class="circle" style="--clr:#fee800;">
+                    <!-- <div class="dots min-dots"></div> -->
+                    <svg>
+                        <circle cx ="70" cy="70" r="70"></circle>
+                        <circle cx ="70" cy="70" r="70" id="mm"></circle>
+                    </svg>
+                    <div id="minutes">00</div>
+                </div>
+                <div class="circle" style="--clr:#04fc43;">
+                    <!-- <div class="dots sec-dots"></div> -->
+                    <svg>
+                        <circle cx ="70" cy="70" r="70"></circle>
+                        <circle cx ="70" cy="70" r="70" id="ss"></circle>
+                    </svg>
+                    <div id="seconds">00</div>
+                </div>
+                <div class="ap">
+                    <div id="ampm">AM</div>
+                </div>
+            </div>
+        </div>
+        <div class="todo-app">
+            <h2>To-DO List <i class="fa fa-pencil-square-o" aria-hidden="true"></i></h2>
+            <input type="text" placeholder="Write Here..." id="inputbox" class="inputbox">
+            <ul class="list" id ="list">
+
+            </ul> 
+        </div>
+    </div>
+
+    <script src="digital_clock.js"></script>
+    <script src = "to-do.js"></script>
+    
+</body>
+</html>
